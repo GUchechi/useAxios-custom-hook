@@ -1,10 +1,14 @@
 import './App.css';
+import Posts from './components/Posts';
+import Jokes from './components/Jokes';
 
 function App() {
   return (
-    <div className="App">
-    
-    </div>
+    <main className="App">
+      <h1>Dad Joke</h1>
+      <Jokes />
+      <Posts />
+    </main>
   );
 }
 
