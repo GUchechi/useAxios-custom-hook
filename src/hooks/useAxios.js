@@ -26,6 +26,7 @@ const useAxios = (configObj) => {
                     signal: controller.signal
                 });
                 console.log(res);
+                setError('')
                 setResponse(res.data);
             } catch (err) {
                 console.log(err.message);
@@ -44,7 +45,7 @@ const useAxios = (configObj) => {
         // eslint-disable-next-line
     }, [reload]);
 
-    return [response, error, loading,refetch];
+    return [response, error, loading, refetch];
 }
 
 export default useAxios
